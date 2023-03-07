@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Destination</title>
+</head>
+
+<body class="destBody">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <nav>
+        <div class="icon"><img src="./assets/shared/logo.svg" alt=""></div>
+        <div class="hamburger">
+            <div class="line "></div>
+            <div class="line "></div>
+            <div class="line "></div>
+        </div>
+        <div class="navLOuter hideNav">
+
+
+            <a href="./index.html" class="mainUnderline">
+                <span>
+                    00
+                </span> HOME
+            </a>
+            <a href="./dest.html">
+                <span>
+                    01
+                </span> DESTINATION
+            </a>
+            <a href="./crew.html">
+                <span>
+                    02
+                </span> CREW
+            </a>
+            <a href="./technology.html">
+                <span>
+                    03
+                </span> TECHNOLOGY
+            </a>
+
+        </div>
+    </nav>
+    <main class="destMain">
+        <div class="leftPlanet">
+            <h1 class="ff-sans-cond">
+                <span>
+                    01
+                </span>
+                PICK YOUR DESTINATION
+            </h1>
+            <div class="planet">
+                <img id="planetImg" src="./assets/destination/image-moon.png" alt="">
+            </div>
+        </div>
+        <div class="planetAbout">
+            <div class="planetNav">
+                <button class="planetBtn planetUnderline">MOON</button>
+                <button class="planetBtn">MARS</button>
+                <button class="planetBtn">EUROPA</button>
+                <button class="planetBtn">TITAN</button>
+            </div>
+            <div class="planetData">
+                <h1 class="fs-800 ff-serif planetName">MOON</h1>
+                <p class="text-accent fs-400 planetText">See our planet as you’ve never seen it before. A perfect
+                    relaxing trip
+                    away to
+                    help regain
+                    perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2
+                    and Apollo 11 landing sites.</p>
+                <div class="stats">
+                    <div class="dist">
+                        <span class="text-accent">AVG. DISTANCE </span>
+                        <h2 class="fs-600 planetDist">384,400 KM</h2>
+                    </div>
+                    <div class="time">
+                        <span class="text-accent">EST. TRAVEL TIME</span>
+                        <h2 class="planetTime">3 DAYS</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+    <script>
+        const navAnch = document.querySelectorAll('.navLOuter a');
+        navAnch.forEach(nav => {
+            nav.classList.remove('mainUnderline')
+        })
+        navAnch[1].classList.add('mainUnderline')
+    </script>
+</body>
+
+</html>

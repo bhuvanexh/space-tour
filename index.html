@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="homeBody">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+    <nav>
+        <div class="icon"><img src="./assets/shared/logo.svg" alt=""></div>
+        <div class="hamburger">
+            <div class="line "></div>
+            <div class="line "></div>
+            <div class="line "></div>
+        </div>
+        <div class="navLOuter hideNav">
+
+
+            <a href="./index.html" class="mainUnderline thak">
+                <span>
+                    00
+                </span> HOME
+            </a>
+            <a href="./dest.html">
+                <span>
+                    01
+                </span> DESTINATION
+            </a>
+            <a href="./crew.html">
+                <span>
+                    02
+                </span> CREW
+            </a>
+            <a href="./technology.html">
+                <span>
+                    03
+                </span> TECHNOLOGY
+            </a>
+
+        </div>
+    </nav>
+    <main class="homeMain">
+        <div class="leftText ff-sans-normal">
+
+            <h2 class="fs-600 text-accent">
+                So, you want to travel to
+            </h2>
+            <h1 class="fs-900">
+                SPACE
+            </h1>
+            <p class="fs-400 text-accent">
+                Let’s face it; if you want to go to space, you might as well genuinely go to
+                outer space and not hover kind of on the edge of it. Well sit back, and relax
+                because we’ll give you a truly out of this world experience!
+            </p>
+        </div>
+        <div class="explore">
+            <span class="fs-700 ff-serif">Explore</span>
+        </div>
+    </main>
+    <script src="index.js"></script>
+    <script>
+        const navAnch = document.querySelectorAll('.navLOuter a');
+        navAnch.forEach(nav => {
+            nav.classList.remove('mainUnderline')
+        })
+        navAnch[0].classList.add('mainUnderline')
+    </script>
+</body>
+
+</html>

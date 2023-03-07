@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Technology</title>
+</head>
+
+<body class="techBody">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <nav>
+        <div class="icon"><img src="./assets/shared/logo.svg" alt=""></div>
+        <div class="hamburger">
+            <div class="line "></div>
+            <div class="line "></div>
+            <div class="line "></div>
+        </div>
+        <div class="navLOuter hideNav">
+
+
+            <a href="./index.html" class="mainUnderline">
+                <span>
+                    00
+                </span> HOME
+            </a>
+            <a href="./dest.html">
+                <span>
+                    01
+                </span> DESTINATION
+            </a>
+            <a href="./crew.html">
+                <span>
+                    02
+                </span> CREW
+            </a>
+            <a href="./technology.html">
+                <span>
+                    03
+                </span> TECHNOLOGY
+            </a>
+
+        </div>
+    </nav>
+    <main class="techMain">
+        <div class="techLeft">
+            <h2><span>02</span> SPACE LAUNCH 101</h2>
+            <div class="techLeftBottom">
+                <div class="techNav">
+                    <button class="btnTech btnTech1 techSelected">1</button>
+                    <button class="btnTech btnTech2">2</button>
+                    <button class="btnTech btnTech3">3</button>
+                </div>
+                <div class="techInfo ">
+                    <h3 class="text-accent ff-serif">THE TERMINOLOGY...</h3>
+                    <h1 class="techVehicle">LAUNCH VEHICLE</h1>
+                    <p class="text-accent techText">A launch vehicle or carrier rocket is a rocket-propelled
+                        vehicle
+                        used to
+                        carry a payload from
+                        Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most
+                        powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch
+                        pad!</p>
+                </div>
+            </div>
+        </div>
+        <div class="techImgDiv">
+            <img class="techImg" src="./assets/technology/image-launch-vehicle-portrait.jpg" alt="">
+        </div>
+    </main>
+    <script src="index.js"></script>
+    <script>
+        const navAnch = document.querySelectorAll('.navLOuter a');
+        navAnch.forEach(nav => {
+            nav.classList.remove('mainUnderline')
+        })
+        navAnch[3].classList.add('mainUnderline')
+    </script>
+</body>
+
+</html>
